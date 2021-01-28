@@ -1,0 +1,32 @@
+package com.company;
+
+public class Country {
+    String name;
+    double size;
+    int numberOfCitizens;
+    String continent;
+
+    public Country(String name, double size, int numberOfCitizens, String continent) {
+        this.name = name;
+        this.size = size;
+        this.numberOfCitizens = numberOfCitizens;
+        this.continent = continent;
+    }
+    public void printCountrySize(){
+        System.out.println("Size "+size);
+    }
+
+    public void printSizePerCitizen(){
+        System.out.println("Size per citizen "+(float)size/numberOfCitizens);
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "name='" + name + '\'' +
+                ", size=" + size +
+                ", numberOfCitizens=" + numberOfCitizens +
+                ", continent='" + continent + '\'' +
+                '}';
+    }
+}
