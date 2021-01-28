@@ -1,0 +1,14 @@
+package com.company;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Country country1=new Country("Israel",22145.1,7000000,"Asia");
+        country1.printCountrySize();
+        country1.printSizePerCitizen();
+        System.out.println(country1);
+
+    }
+
+}
